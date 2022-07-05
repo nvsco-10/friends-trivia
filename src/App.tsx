@@ -1,9 +1,32 @@
-import React from 'react';
+import {MouseEvent} from 'react';
+import QuestionCard from './components/QuestionCard';
 
-function App() {
+const App = () => {
+
+  const startTrivia = async () => {
+
+  }
+
+  const checkAnswer = (e: MouseEvent<HTMLButtonElement>) => {
+
+  }
+
+  const nextQuestion = () => {
+
+  }
+
   return (
     <div>
-      Quiz
+      <h1>FRIENDS QUIZ</h1>
+      <button className='start' onClick={startTrivia}>
+        Start
+      </button>
+      <p className='score'>Score:</p>
+      <p>loading questions...</p>
+      <QuestionCard />
+      <button className='next' onClick={nextQuestion}>
+        Next Question
+      </button>
     </div>
   );
 }
