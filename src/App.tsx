@@ -111,7 +111,7 @@ const App: FC = () => {
             Start Quiz
           </button>
         )} 
-        {(gameOver && userAnswers.length !== 0 || (userAnswers.length === TOTAL_QUESTIONS)) &&
+        {((gameOver && (userAnswers.length !== 0 )) || (userAnswers.length === TOTAL_QUESTIONS)) &&
           <button className='start' onClick={startTrivia}>
             Restart Quiz
           </button>
